@@ -11,5 +11,9 @@
     "next": "9.3.5",
     "react": "16.13.1",
     "react-dom": "16.13.1"
+  },
+  "devDependencies": {
+    "inquirer-directory": "^2.2.0",
+    "plop": "^2.6.0"
   }
 }
