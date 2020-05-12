@@ -1,0 +1,26 @@
+.marquee {
+    position: relative;
+    overflow: hidden;
+    --offset: 20vw;
+    --move-initial: calc(-25% + var(--offset));
+    --move-final: calc(-50% + var(--offset));
+}
+
+.marquee-content {
+  animation-play-state: running;
+  display: flex;
+    width: fit-content;
+    position: relative;
+    transform: translate3d(var(--move-initial), 0, 0);
+    animation: marquee 5s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate3d(0vw, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(110vw, 0, 0);
+  }
+}

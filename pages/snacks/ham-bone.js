@@ -9,14 +9,14 @@ export default function FirstPost() {
     <>
       <h1>First Post</h1>
       <Link href="/"><a>Home</a></Link>
+      <Marquee>
       <Spinning>
         <Blinker>
-          Hi
+          <span>Test</span>
         </Blinker>
       </Spinning>
-      <Marquee>
-        <span>Test</span>
       </Marquee>
+
     </>
   );
 }
