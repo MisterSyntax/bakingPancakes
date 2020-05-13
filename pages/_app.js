@@ -8,15 +8,15 @@ export default function MyApp({
 }) {
   return (
     <>
-    <Head>
-      <title>Baking Some Pancakes</title>
-    </Head>
-    <main>
-      <Component />
+      <Head>
+        <title>Baking Some Pancakes</title>
+      </Head>
+      <main>
+        <Component />
+      </main>
       <footer>
-        Its a foot
+      Its a foot
       </footer>
-    </main>
     </>
   );
 }

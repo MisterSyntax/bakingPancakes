@@ -15,8 +15,8 @@ export const Marquee = ({
   children
 }) => {
   return (
-    <div class={styles.marquee}>
-    	<div class={styles['marquee-content']} aria-hidden="true">
+    <div className={styles.marquee}>
+    	<div className={styles['marquee-content']} aria-hidden="true">
     	   {children}
     	</div>
     </div>

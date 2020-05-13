@@ -3,13 +3,13 @@ import { shallow } from 'enzyme';
 import { Spinning } from './Spinning';
 
 describe('Spinning', () => {
-  it('should render null when  is not supposed to render', () => {
-    const wrapper = shallow(<Spinning shouldShowComponentVar={false} />);
-    expect(wrapper.type()).toEqual(null);
+  it('renders the spinner', () => {
+    const wrapper = shallow(<Spinning />);
+    expect(wrapper.find('.spinning').length).toEqual(1);
   });
 
-  it('when it successfully renders it renders an element with the appropriate class-name', () => {
-    const wrapper = shallow(<Spinning shouldShowComponentVar={true} />);
-    expect(wrapper.find('.class-name').length).toEqual(1);
+  it('renders the inline spinner', () => {
+    const wrapper = shallow(<Spinning inline={true} />);
+    expect(wrapper.find('.inline').length).toEqual(1);
   });
 });

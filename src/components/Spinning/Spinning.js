@@ -12,8 +12,16 @@ import styles from './Spinning.module.css';
 
 
 export const Spinning = ({
+  inline,
   children,
 }) => {
+  if(inline) {
+    return (
+      <div className={`${styles.spinning} ${styles.inline}`}>
+        {children}
+      </div>
+    );
+  }
   return (
     <div className={styles.spinning}>
       {children}
